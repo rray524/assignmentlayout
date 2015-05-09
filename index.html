@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="font-awesome.min.css">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="normalize.css">
+
+    <title>PhotoFolio</title>
+	<style>
+	*{margin:0; }
+	/******header*******/
+	.main_container{width:100%; }
+	header{background:#2A2A2A;height:53px; }
+	nav{width:80%; }
+	.main_nav{list-style:none;width:80%;margin:0 auto;padding-top:15px; }
+	.main_nav li{float:left;padding: 0 27px;border-left: 2px solid #3D3D3D;
+    border-right: 2px solid #262626; }
+	.main_nav li:first-child{border-left:none;border-right:none; padding-left:0px; }
+	.main_nav li:last-child{border-right:none; }
+	.main_nav li a{text-decoration:none; color:#99FFCC;}
+	.main_nav li a:hover{text-shadow:0 0 4.5px #888; }
+	.main_nav li a:first-child{padding-left:0px;}
+	/********search bar*************/
+	.search_bar{width: 40%;float:left;padding-left: 39px; }
+	.bar:focus {outline: 0;}
+	.bar{float:right;width: 200px;border: 1px solid #262626;border-radius: 20px;margin-top: -4px;padding: 5px; }
+	::-webkit-input-placeholder { color: red;text-align:center;}
+    ::-moz-placeholder {color: red;text-align:center;} 
+	/********main_content*************/ 
+	.main_content{background:#3F4042;width:100%;height:999px; }
+	.title{color:#EFF0F0;width:81%;margin:0 92px;padding:34px;min-height:24px;}
+	.title h1{float:left;margin-top: -2px; }
+	.bord{float: left;height: 20px;border-left: 2px solid #262626;border-right: 2px solid #5f5f5f;margin: 7px 15px 0;}
+	.title p{margin-top: 6px;font-style:italic;}
+	/********column photo*************/ 
+	.content_column{margin:0 auto;width:80%; }
+	.column_one{float:left;width:33%;margin-left: -6px; }
+	.two_images{float:left;margin-left:0px; }
+	.img_three{float:right;margin-left:4px; }
+	.column_two{float:left;width:33%; }
+	.img_four{float:left; }
+	.img_five{margin-top:6px; }
+	.column_three{width:33%;float:left; }
+	.para{float:left;margin:12px 129px 12px;width:79% }
+	.para h3{margin:12px;text-align:center; }
+	.para p{padding:25px; }
+	.scale_photo{float:left; margin-left:134px;}
+	.scale_photo img{margin:9px;transition:1s ease; }
+	.scale_photo img:hover{transform:scale(1.2);transition:1s ease; }
+     /********footer*************/ 
+	 footer{width:100%;height:349px;background:#2E2E2E }
+	 .left{margin-left: 111px;padding: 33px;float:left; }
+	 .left_item img{border:1px solid lime;transition:1s ease; }
+	 .left_item2 img{border:1px solid lime;transition:1s ease; }
+	 .left img:hover{transform:scale(0.8);transition:1s ease; }
+	 .middle{float:left;padding:33px;margin-right:56px;margin-top:55px; }
+	 .middle img{opacity:.5; }
+	 .middle img:hover{opacity:1; }
+	 .right{padding:23px;;line-height:34px;color:#fff;margin-left:0; }
+	</style>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="main_container">
+  <header>
+   	<nav>
+		<ul class="main_nav">
+			<li><a href="#"><i>Home</i></a></li>
+			<li><a href="#"><i>Work</i></a></li>
+			<li><a href="#"><i>Service</i></a></li>
+			<li><a href="#"><i>About</i></a></li>
+			<li><a href="#"><i>Contact</i></a></li>
+		</ul>
+	</nav>
+	<div class="search_bar">
+		<input type="search" class="bar" placeholder="search" />
+	</div>
+  </header>
+  <div class="main_content">
+      	<div class="title">
+    	 <h1>PHOTO{</h1>
+    	 <div class="bord"></div>
+    	 <p>I take awesome photos</p>
+    	</div>
+		
+		
+		<div class="content_column">
+	  	<div class="column_one">
+			<img src="1.jpg" width="350px" height="188px;" />
+			<div class="two_images">
+			   <img src="4.jpg" width="173px" height="102px;" class="img_two" />
+			   <img src="4.jpg" width="173px" height="102px;" class="img_three" />
+			</div>
+
+			<img src="1.jpg" width="350px" height="188px;" />
+		</div>
+	    <div class="column_two">
+			   <img src="3.jpg" width="351px" height="241px;" class="img_four" />
+			   <img src="3.jpg" width="351px" height="240px;" class="img_five" />
+		</div>
+	    <div class="column_three">
+			   <img src="3.jpg" width="352px" height="352px;" class="img_six" />
+			   <img src="3.jpg" width="352px" height="130px;" class="img_seven" />
+		</div>
+	  </div><!--end content_column-->
+	  <div class="para">
+	  	<h3 style="color:#FFFFFF;font-style:italic;">Photography is a way of life a hobby</h3>
+		<hr />
+		<p style="color:#999999;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eum numquam molestias voluptatem, eos deserunt distinctio blanditiis assumenda animi possimus maxime quae quasi error doloribus facere magnam in dolorem. Commodi sit modi fuga impedit sint exercitationem dolor alias incidunt maiores, minus quisquam id? Voluptatem nulla dolorum aliquid quaerat.</p>
+	    <hr />
+	  </div>
+	  <div class="scale_photo">
+	  	<img src="6.jpg" width="129px" height="196px" />
+		<img src="6.jpg" width="129px" height="196px" />
+		<img src="6.jpg" width="129px" height="196px" />
+		<img src="6.jpg" width="129px" height="196px" />
+		<img src="6.jpg" width="129px" height="196px" />
+		<img src="6.jpg" width="129px" height="196px" />
+		<img src="6.jpg" width="129px" height="196px" />
+	  </div>
+  </div><!--end main_content-->
+  <footer>
+  	<div class="left">
+	 <div class="left_item">
+	  <img src="7.jpg" width="106px" height="117px;" />
+	  <img src="7.jpg" width="106px" height="117px;" />
+	  <img src="7.jpg" width="106px" height="117px;" />
+	  <img src="7.jpg" width="106px" height="117px;" />
+	 </div>
+	 <div class="left_item2">
+	  <img src="7.jpg" width="106px" height="117px;" />
+	  <img src="7.jpg" width="106px" height="117px;" />
+	  <img src="7.jpg" width="106px" height="117px;" />
+	  <img src="7.jpg" width="106px" height="117px;" />
+	  
+	 </div>
+	</div><!--end left class-->
+	<div class="middle">
+     <img src="64-facebook.png" width="64px" height="64px;" />
+	 <img src="64-twitter.png" width="64px" height="64px;" />
+	 <img src="64-linkedin.png" width="64px" height="64px;" />	
+	 <img src="64-googleplus.png" width="64px" height="64px;" />		
+	</div><!--end middle class-->
+	<div class="right">
+      <p>P/ (03)585454651<br />
+      
+      E/ rahul@sagworld.net<br />
+      
+      W/ www.sagworld.net<br />
+      
+      W/ www.sagworld.net</p>
+	</div><!--end right class-->
+  
+  </footer>
+  </div><!--end main_container-->
+
+  </body>
+</html>
